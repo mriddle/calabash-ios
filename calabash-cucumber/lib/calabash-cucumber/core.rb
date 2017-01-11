@@ -1529,7 +1529,7 @@ arguments => '#{arguments}'
             delay = merged_opts[:post_resign_active_delay] +
               merged_opts[:post_will_terminate_delay] + 0.4
             sleep(delay)
-            launcher.automator.send(:session_delete)
+            launcher.automator.send(:stop)
           end
         end
         true
